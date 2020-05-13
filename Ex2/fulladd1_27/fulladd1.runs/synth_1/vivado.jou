@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov  6 11:26:36 2019
+# Process ID: 4872
+# Current directory: E:/fulladd1/fulladd1.runs/synth_1
+# Command line: vivado.exe -log fulladd1io_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fulladd1io_wrapper.tcl
+# Log file: E:/fulladd1/fulladd1.runs/synth_1/fulladd1io_wrapper.vds
+# Journal file: E:/fulladd1/fulladd1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fulladd1io_wrapper.tcl -notrace

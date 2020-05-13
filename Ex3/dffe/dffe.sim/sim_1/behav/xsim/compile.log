@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/数字逻辑设计实验三/dffe/dffe.srcs/sources_1/new/dffe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/数字逻辑设计实验三/dffe/dffe.srcs/sim_1/new/dffe_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/数字逻辑设计实验三/dffe/dffe.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/Moore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Moore
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/allocate_box.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module allocate_box
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/allocate_code.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module allocate_code
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/box_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module box_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/box_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module box_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/cam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cam
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/clock_1khz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_1khz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/code_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module code_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/delay_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/dignt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dignt
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/dignt_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dignt_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/hextodec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hextodec
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/led_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sources_1/new/reg16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.srcs/sim_1/new/main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

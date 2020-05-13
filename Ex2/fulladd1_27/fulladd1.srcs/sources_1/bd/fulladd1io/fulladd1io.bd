@@ -1,0 +1,70 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBE4C44ADBE4C44AD",
+      "device": "xc7a35tcsg324-1",
+      "name": "fulladd1io",
+      "synth_flow_mode": "None",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fulladd1_0": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I"
+      },
+      "b": {
+        "direction": "I"
+      },
+      "cin": {
+        "direction": "I"
+      },
+      "sum": {
+        "direction": "O"
+      },
+      "cout": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "fulladd1_0": {
+        "vlnv": "xilinx.com:user:fulladd1:1.0",
+        "xci_name": "fulladd1io_fulladd1_0_0"
+      }
+    },
+    "nets": {
+      "a_1": {
+        "ports": [
+          "a",
+          "fulladd1_0/a"
+        ]
+      },
+      "b_1": {
+        "ports": [
+          "b",
+          "fulladd1_0/b"
+        ]
+      },
+      "cin_1": {
+        "ports": [
+          "cin",
+          "fulladd1_0/cin"
+        ]
+      },
+      "fulladd1_0_sum": {
+        "ports": [
+          "fulladd1_0/sum",
+          "sum"
+        ]
+      },
+      "fulladd1_0_cout": {
+        "ports": [
+          "fulladd1_0/cout",
+          "cout"
+        ]
+      }
+    }
+  }
+}

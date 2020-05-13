@@ -1,0 +1,4 @@
+fulladd1.v,verilog,xil_defaultlib,../../../bd/fulladd1io/ipshared/c063/sources_1/new/fulladd1.v,
+fulladd1io_fulladd1_0_0.v,verilog,xil_defaultlib,../../../bd/fulladd1io/ip/fulladd1io_fulladd1_0_0/sim/fulladd1io_fulladd1_0_0.v,
+fulladd1io.v,verilog,xil_defaultlib,../../../bd/fulladd1io/sim/fulladd1io.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Mealy01101_lqy/Mealy01101_lqy.srcs/sources_1/new/Mealy01101.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mealy01101
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Mealy01101_lqy/Mealy01101_lqy.srcs/sim_1/new/Mealy01101_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mealy01101_sim

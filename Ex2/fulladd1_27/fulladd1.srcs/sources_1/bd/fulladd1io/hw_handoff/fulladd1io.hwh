@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov  6 11:22:29 2019" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="fulladd1io" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fulladd1_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fulladd1_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="External_Ports_cin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fulladd1_0" PORT="cin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="fulladd1_0_sum">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fulladd1_0" PORT="sum"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fulladd1_0_cout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fulladd1_0" PORT="cout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/fulladd1_0" HWVERSION="1.0" INSTANCE="fulladd1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fulladd1" VLNV="xilinx.com:user:fulladd1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fulladd1io_fulladd1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="External_Ports_cin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="fulladd1_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fulladd1_0_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

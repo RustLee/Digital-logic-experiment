@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Moore01101_lqy/Moore01101_lqy.srcs/sources_1/new/Moore01101.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Moore01101
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Moore01101_lqy/Moore01101_lqy.srcs/sim_1/new/Moore01101_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Moore01101_sim

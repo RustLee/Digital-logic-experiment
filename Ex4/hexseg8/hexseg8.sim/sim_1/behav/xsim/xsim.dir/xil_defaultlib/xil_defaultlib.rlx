@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.srcs/sim_1/new/frequency_1khz_sim.v,1574127601,verilog,,,,frequency_1khz_sim,,,,,,,,
+D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.srcs/sim_1/new/selector_sim.v,1574179657,verilog,,,,selector_sim,,,,,,,,
+D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.srcs/sources_1/new/frequency_1khz.v,1574128477,verilog,,D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.srcs/sources_1/new/selector.v,,frequency_1khz,,,,,,,,
+D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.srcs/sources_1/new/selector.v,1574178724,verilog,,D:/study/Digital logic experiment/Ex4/hexseg8/hexseg8.srcs/sim_1/new/selector_sim.v,,selector,,,,,,,,

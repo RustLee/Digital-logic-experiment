@@ -1,0 +1,588 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 20 10:28:57 2019
+# Process ID: 1660
+# Current directory: E:/hexseg8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11828 E:\hexseg8\hexseg8.xpr
+# Log file: E:/hexseg8/vivado.log
+# Journal file: E:/hexseg8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/hexseg8/hexseg8.xpr
+INFO: [Project 1-313] Project file moved from 'D:/study/Digital logic experiment/Ex4/hexseg8' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 700.047 ; gain = 109.031
+update_compile_order -fileset sources_1
+file mkdir E:/hexseg8/hexseg8.srcs/constrs_1
+file mkdir E:/hexseg8/hexseg8.srcs/constrs_1/new
+close [ open E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc w ]
+add_files -fileset constrs_1 E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 11:10:24 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+[Wed Nov 20 11:10:24 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 11:13:39 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+[Wed Nov 20 11:13:39 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 11:18:12 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+[Wed Nov 20 11:18:12 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Nov 20 11:40:11 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Nov 20 11:40:39 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 11:41:34 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: counter
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1972.414 ; gain = 52.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'counter' [E:/hexseg8/hexseg8.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/counter.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2014.766 ; gain = 94.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2014.766 ; gain = 94.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2014.766 ; gain = 94.520
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+WARNING: [Vivado 12-584] No ports matched 'hex0[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex0[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex1[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs0[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs1[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[0]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[1]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[2]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[3]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[4]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[5]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[6]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'len[7]'. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2017.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2017.559 ; gain = 97.313
+6 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2017.559 ; gain = 97.313
+set_property IOSTANDARD LVCMOS33 [get_ports [list {high[3]} {high[2]} {high[1]} {high[0]}]]
+startgroup
+create_interface interface_1
+set_property interface interface_1 [get_ports [list  {high[3]} {high[2]} {high[1]} {high[0]}]]
+endgroup
+delete_interface interface_1
+export_ip_user_files -of_objects  [get_files E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+file delete -force E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+close [ open E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc w ]
+add_files -fileset constrs_1 E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Finished Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 11:51:26 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+[Wed Nov 20 11:51:26 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:00:33 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2541.691 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2541.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2541.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property top hexseg8 [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:04:30 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+[Wed Nov 20 12:04:31 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Nov 20 12:11:34 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+close_design
+close_design
+launch_runs impl_1 -jobs 6
+[Wed Nov 20 12:12:09 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:13:00 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: hexseg8
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2908.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hexseg8' [E:/hexseg8/hexseg8.srcs/sources_1/new/hexseg8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_1khz' [E:/hexseg8/hexseg8.srcs/sources_1/new/frequency_1khz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'frequency_1khz' (1#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/frequency_1khz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'selector' [E:/hexseg8/hexseg8.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (2#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transcoding' [E:/hexseg8/hexseg8.srcs/sources_1/new/transcoding.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transcoding' (3#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/transcoding.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [E:/hexseg8/hexseg8.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hexseg8' (5#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/hexseg8.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2908.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2908.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2908.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Finished Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2962.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2962.602 ; gain = 54.453
+13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2962.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hexseg8' [E:/hexseg8/hexseg8.srcs/sources_1/new/hexseg8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_1khz' [E:/hexseg8/hexseg8.srcs/sources_1/new/frequency_1khz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'frequency_1khz' (1#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/frequency_1khz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'selector' [E:/hexseg8/hexseg8.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (2#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transcoding' [E:/hexseg8/hexseg8.srcs/sources_1/new/transcoding.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transcoding' (3#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/transcoding.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [E:/hexseg8/hexseg8.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hexseg8' (5#1) [E:/hexseg8/hexseg8.srcs/sources_1/new/hexseg8.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2962.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2962.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2962.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Finished Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2962.602 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Nov 20 12:26:49 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Nov 20 12:27:21 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:28:22 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {en[7]} {en[6]} {en[5]} {en[4]} {en[3]} {en[2]} {en[1]} {en[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {hex0[3]} {hex0[2]} {hex0[1]} {hex0[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {hex1[3]} {hex1[2]} {hex1[1]} {hex1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {len[7]} {len[6]} {len[5]} {len[4]} {len[3]} {len[2]} {len[1]} {len[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segs0[7]} {segs0[6]} {segs0[5]} {segs0[4]} {segs0[3]} {segs0[2]} {segs0[1]} {segs0[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segs1[7]} {segs1[6]} {segs1[5]} {segs1[4]} {segs1[3]} {segs1[2]} {segs1[1]} {segs1[0]}]]
+set_property target_constrs_file E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.168 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Nov 20 12:35:27 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Nov 20 12:35:56 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list s3]]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Finished Parsing XDC File [E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:37:07 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+reset_run impl_1 -prev_step 
+set_property IOSTANDARD LVCMOS33 [get_ports [list s3]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.168 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:37:40 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0006.Hub_#0001
+set_property PROGRAM.FILE {E:/hexseg8/hexseg8.runs/impl_1/hexseg8.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/hexseg8/hexseg8.runs/impl_1/hexseg8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 20 12:41:40 2019] Launched synth_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/synth_1/runme.log
+[Wed Nov 20 12:41:40 2019] Launched impl_1...
+Run output will be captured here: E:/hexseg8/hexseg8.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn2" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.

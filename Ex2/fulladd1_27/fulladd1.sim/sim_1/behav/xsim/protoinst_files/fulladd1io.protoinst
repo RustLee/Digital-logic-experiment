@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"fulladd1io": {
+			"proto_instances": {
+			}
+		}
+	}
+}

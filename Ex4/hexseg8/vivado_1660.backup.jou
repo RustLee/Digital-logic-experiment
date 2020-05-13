@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 20 10:28:57 2019
+# Process ID: 1660
+# Current directory: E:/hexseg8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11828 E:\hexseg8\hexseg8.xpr
+# Log file: E:/hexseg8/vivado.log
+# Journal file: E:/hexseg8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/hexseg8/hexseg8.xpr
+update_compile_order -fileset sources_1
+file mkdir E:/hexseg8/hexseg8.srcs/constrs_1
+file mkdir E:/hexseg8/hexseg8.srcs/constrs_1/new
+close [ open E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc w ]
+add_files -fileset constrs_1 E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {high[3]} {high[2]} {high[1]} {high[0]}]]
+startgroup
+create_interface interface_1
+set_property interface interface_1 [get_ports [list  {high[3]} {high[2]} {high[1]} {high[0]}]]
+endgroup
+delete_interface interface_1
+export_ip_user_files -of_objects  [get_files E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+file delete -force E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+close [ open E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc w ]
+add_files -fileset constrs_1 E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top hexseg8 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+close_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {en[7]} {en[6]} {en[5]} {en[4]} {en[3]} {en[2]} {en[1]} {en[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {hex0[3]} {hex0[2]} {hex0[1]} {hex0[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {hex1[3]} {hex1[2]} {hex1[1]} {hex1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {len[7]} {len[6]} {len[5]} {len[4]} {len[3]} {len[2]} {len[1]} {len[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segs0[7]} {segs0[6]} {segs0[5]} {segs0[4]} {segs0[3]} {segs0[2]} {segs0[1]} {segs0[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segs1[7]} {segs1[6]} {segs1[5]} {segs1[4]} {segs1[3]} {segs1[2]} {segs1[1]} {segs1[0]}]]
+set_property target_constrs_file E:/hexseg8/hexseg8.srcs/constrs_1/new/hexseg8.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list s3]]
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+reset_run impl_1 -prev_step 
+set_property IOSTANDARD LVCMOS33 [get_ports [list s3]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/hexseg8/hexseg8.runs/impl_1/hexseg8.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/hexseg8/hexseg8.runs/impl_1/hexseg8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+close_hw
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server

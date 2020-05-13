@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  6 22:15:05 2020
+# Process ID: 2956
+# Current directory: E:/study/Digital logic experiment/Ex6/Dcabinet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14152 E:\study\Digital logic experiment\Ex6\Dcabinet\Dcabinet.xpr
+# Log file: E:/study/Digital logic experiment/Ex6/Dcabinet/vivado.log
+# Journal file: E:/study/Digital logic experiment/Ex6/Dcabinet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/study/Digital logic experiment/Ex6/Dcabinet/Dcabinet.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source main_sim.tcl
+close_sim

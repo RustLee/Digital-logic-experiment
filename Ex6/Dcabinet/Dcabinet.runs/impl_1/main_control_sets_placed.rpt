@@ -1,0 +1,103 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 18 11:45:13 2019
+| Host         : stu22 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    35 |
+| Unused register locations in slices containing registers |   166 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            9 |
+|      5 |            1 |
+|      8 |            1 |
+|     15 |            1 |
+|    16+ |           23 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              77 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              45 |           12 |
+| Yes          | No                    | No                     |             345 |           92 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              55 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------+------------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+------------------------------------+------------------------------------+------------------+----------------+
+|  clk1_BUFG     | d4/count[3]_i_2__2_n_0             | d4/count[3]_i_1__2_n_0             |                1 |              4 |
+|  clk_IBUF_BUFG |                                    | bxc/alloc/bc/count[4]_i_1_n_0      |                1 |              4 |
+|  clk_IBUF_BUFG | m/D_delay_reg                      | m/FSM_onehot_now_state_reg[5]_0    |                2 |              4 |
+|  clk_IBUF_BUFG | m/FSM_onehot_now_state_reg[1]_2[0] |                                    |                3 |              4 |
+|  clk1_BUFG     | m/FSM_onehot_now_state_reg[1]_3[0] | m/SR[0]                            |                1 |              4 |
+|  clk1_BUFG     | m/FSM_onehot_now_state_reg[4]_2[0] | m/SR[0]                            |                2 |              4 |
+|  clk1_BUFG     | d1/count[3]_i_2_n_0                | d1/clear                           |                1 |              4 |
+|  clk1_BUFG     | d2/count[3]_i_2__0_n_0             | d2/count[3]_i_1__0_n_0             |                1 |              4 |
+|  clk1_BUFG     | d3/count[3]_i_2__1_n_0             | d3/count[3]_i_1__1_n_0             |                1 |              4 |
+|  clk_IBUF_BUFG | m/E[0]                             |                                    |                2 |              5 |
+|  clk1_BUFG     |                                    |                                    |                6 |              8 |
+|  clk_IBUF_BUFG |                                    | c1/clk1_0                          |                4 |             15 |
+|  clk_IBUF_BUFG | m/enable_reg[0][0]                 |                                    |                4 |             16 |
+|  clk_IBUF_BUFG | m/FSM_onehot_now_state_reg[5]_4[0] |                                    |                9 |             16 |
+|  clk_IBUF_BUFG | m/FSM_onehot_now_state_reg[5]_3[0] |                                    |                6 |             16 |
+|  clk1_BUFG     | m/FSM_onehot_now_state_reg[5]_3[0] |                                    |                3 |             16 |
+|  clk_IBUF_BUFG | m/B_num_reg[1]_0[0]                |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/B_clear_reg[3]_1[0]              |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/B_num_reg[1]_1[0]                |                                    |                5 |             17 |
+|  clk_IBUF_BUFG | m/B_num_reg[2][0]                  |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/D_delay_reg_1[0]                 |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/D_delay_reg_3[0]                 |                                    |                3 |             17 |
+|  clk_IBUF_BUFG | m/B_clear_reg[3]_2[0]              |                                    |                5 |             17 |
+|  clk_IBUF_BUFG | m/FSM_onehot_now_state_reg[5]_1[0] |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/B_clear_reg[3]_0[0]              |                                    |                3 |             17 |
+|  clk_IBUF_BUFG | m/B_num_reg[1][0]                  |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/D_delay_reg_5[0]                 |                                    |                5 |             17 |
+|  clk_IBUF_BUFG | m/D_delay_reg_2[0]                 |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/D_delay_reg_0[0]                 |                                    |                6 |             17 |
+|  clk_IBUF_BUFG | m/B_num_reg[1]_2[0]                |                                    |                3 |             17 |
+|  clk_IBUF_BUFG | m/B_clear_reg[3][0]                |                                    |                4 |             17 |
+|  clk_IBUF_BUFG | m/D_delay_reg_4[0]                 |                                    |                3 |             17 |
+|  clk_IBUF_BUFG |                                    | m/FSM_onehot_now_state_reg[5]_4[0] |                7 |             26 |
+|  clk_IBUF_BUFG | m/delay/count                      | m/delay/clear                      |                7 |             27 |
+|  clk_IBUF_BUFG |                                    |                                    |               19 |             69 |
++----------------+------------------------------------+------------------------------------+------------------+----------------+
+
+

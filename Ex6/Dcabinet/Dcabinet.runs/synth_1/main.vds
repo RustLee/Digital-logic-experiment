@@ -1,0 +1,570 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 18 11:44:12 2019
+# Process ID: 7848
+# Current directory: E:/Dcabinet/Dcabinet.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Dcabinet/Dcabinet.runs/synth_1/main.vds
+# Journal file: E:/Dcabinet/Dcabinet.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12484 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 364.508 ; gain = 102.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_1khz' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/clock_1khz.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clock_1khz' (1#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/clock_1khz.v:2]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/reg16.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (2#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/reg16.v:2]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/debounce.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/debounce.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Moore' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/Moore.v:23]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+	Parameter s2 bound to: 3'b100 
+	Parameter s3 bound to: 3'b101 
+	Parameter s4 bound to: 3'b111 
+	Parameter s5 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'delay_1s' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/delay_1s.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'delay_1s' (4#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/delay_1s.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Moore' (5#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/Moore.v:23]
+INFO: [Synth 8-6157] synthesizing module 'box_ctrl' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/box_ctrl.v:2]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+	Parameter s2 bound to: 3'b100 
+	Parameter s3 bound to: 3'b101 
+	Parameter s4 bound to: 3'b111 
+	Parameter s5 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'allocate_box' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/allocate_box.v:2]
+	Parameter s1 bound to: 3'b001 
+INFO: [Synth 8-6157] synthesizing module 'box_counter' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/box_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'box_counter' (6#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/box_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'allocate_box' (7#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/allocate_box.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'box_ctrl' (8#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/box_ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'led_ctrl' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/led_ctrl.v:2]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+	Parameter s2 bound to: 3'b100 
+	Parameter s3 bound to: 3'b101 
+	Parameter s4 bound to: 3'b111 
+	Parameter s5 bound to: 3'b110 
+INFO: [Synth 8-6155] done synthesizing module 'led_ctrl' (9#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/led_ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'code_ctrl' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/code_ctrl.v:23]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+	Parameter s2 bound to: 3'b100 
+	Parameter s3 bound to: 3'b101 
+	Parameter s4 bound to: 3'b111 
+	Parameter s5 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'allocate_code' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/allocate_code.v:2]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+INFO: [Synth 8-6157] synthesizing module 'counter' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (10#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'allocate_code' (11#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/allocate_code.v:2]
+INFO: [Synth 8-6157] synthesizing module 'cam' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/cam.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'cam' (12#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/cam.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'code_ctrl' (13#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/code_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dignt_ctrl' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/dignt_ctrl.v:2]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+	Parameter s2 bound to: 3'b100 
+	Parameter s3 bound to: 3'b101 
+	Parameter s4 bound to: 3'b111 
+	Parameter s5 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'dignt' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/dignt.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'dignt' (14#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/dignt.v:2]
+INFO: [Synth 8-6157] synthesizing module 'hextodec' [E:/Dcabinet/Dcabinet.srcs/sources_1/new/hextodec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'hextodec' (15#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/hextodec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'dignt_ctrl' (16#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/dignt_ctrl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'main' (17#1) [E:/Dcabinet/Dcabinet.srcs/sources_1/new/main.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 420.586 ; gain = 158.391
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 420.586 ; gain = 158.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 420.586 ; gain = 158.391
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Dcabinet/Dcabinet.srcs/constrs_1/new/Dcabinet.xdc]
+Finished Parsing XDC File [E:/Dcabinet/Dcabinet.srcs/constrs_1/new/Dcabinet.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Dcabinet/Dcabinet.srcs/constrs_1/new/Dcabinet.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 751.496 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 751.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 751.496 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 751.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.496 ; gain = 489.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.496 ; gain = 489.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.496 ; gain = 489.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D_delay" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'now_state_reg' in module 'Moore'
+INFO: [Synth 8-5544] ROM "en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_reg_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inputcode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "correct" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hexad00" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inputcode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                           000001 |                              000
+                      s1 |                           000010 |                              001
+                      s2 |                           000100 |                              100
+                      s3 |                           001000 |                              101
+                      s4 |                           010000 |                              111
+                      s5 |                           100000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'now_state_reg' using encoding 'one-hot' in module 'Moore'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 751.496 ; gain = 489.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	  17 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 19    
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 24    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 43    
+	   3 Input      1 Bit        Muxes := 17    
+	   5 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_1khz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg16 
+Detailed RTL Component Info : 
++---Adders : 
+	  17 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module delay_1s 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Moore 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   6 Input      3 Bit        Muxes := 1     
+Module box_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module allocate_box 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 15    
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module box_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+Module led_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module allocate_code 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module cam 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 16    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 16    
+Module code_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+Module dignt_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "delay/count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "delay/D_delay" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "c1/clk1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\co/alloc/enable_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 781.910 ; gain = 519.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 781.910 ; gain = 519.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 781.910 ; gain = 519.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    55|
+|3     |LUT1   |    18|
+|4     |LUT2   |    52|
+|5     |LUT3   |    27|
+|6     |LUT4   |    66|
+|7     |LUT5   |    60|
+|8     |LUT6   |   258|
+|9     |MUXF7  |     1|
+|10    |FDRE   |   516|
+|11    |FDSE   |     6|
+|12    |IBUF   |    21|
+|13    |OBUF   |    40|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+--------------+------+
+|      |Instance    |Module        |Cells |
++------+------------+--------------+------+
+|1     |top         |              |  1122|
+|2     |  boxreg    |reg16         |   115|
+|3     |  bxc       |box_ctrl      |   126|
+|4     |    alloc   |allocate_box  |    87|
+|5     |      bc    |box_counter   |    60|
+|6     |  c1        |clock_1khz    |    28|
+|7     |  co        |code_ctrl     |   477|
+|8     |    alloc   |allocate_code |    63|
+|9     |      pc    |counter       |    42|
+|10    |    codereg |cam           |   377|
+|11    |  d1        |debounce      |    12|
+|12    |  d2        |debounce_0    |    12|
+|13    |  d3        |debounce_1    |    12|
+|14    |  d4        |debounce_2    |    12|
+|15    |  digc      |dignt_ctrl    |    50|
+|16    |    dig1    |dignt         |     7|
+|17    |    dig2    |dignt_3       |     7|
+|18    |  ldc       |led_ctrl      |    57|
+|19    |  m         |Moore         |   158|
+|20    |    delay   |delay_1s      |    49|
++------+------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 786.184 ; gain = 193.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.184 ; gain = 523.988
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 786.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 786.184 ; gain = 536.574
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.184 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Dcabinet/Dcabinet.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 11:44:45 2019...

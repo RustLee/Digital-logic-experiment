@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hexseg8.srcs/sources_1/new/frequency_1khz.v" \
+"../../../../hexseg8.srcs/sim_1/new/frequency_1khz_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

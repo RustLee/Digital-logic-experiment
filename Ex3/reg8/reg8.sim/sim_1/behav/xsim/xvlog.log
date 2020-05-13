@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/Digital logic experiment/Ex3/reg8/dffe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/Digital logic experiment/Ex3/reg8/reg8.srcs/sources_1/new/reg8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/Digital logic experiment/Ex3/reg8/reg8.srcs/sim_1/new/reg8_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg8_sim
